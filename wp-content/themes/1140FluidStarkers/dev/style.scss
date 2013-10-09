@@ -1,0 +1,111 @@
+/*!
+Theme Name: Starkers + 1140 Grid System
+Theme URI: http://thedotmack.com
+Description: The totally nude Wordpress theme and the totally amazing 1140 Fluid (all the way down to mobile) CSS Grid had a child, and this is it. Derived from Elliot Jay Stocks' Starkers Theme (http://starkerstheme.com/) and the 1140 CSS Grid (http://cssgrid.net/).
+Version: 1.0
+Author: Alex Newman
+Author URI: http://thedotmack.com
+Tags: starkers, naked, clean, basic
+*/
+
+
+
+/* RESET */
+/* ----------------------------------------- */
+
+/* Global reset */
+/* Based upon 'reset.css' in the Yahoo! User Interface Library: http://developer.yahoo.com/yui */
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td { margin:0; padding:0 }
+table { border-collapse:collapse; border-spacing:0 }
+fieldset, img { border:0 }
+address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal }
+ol, ul, li { list-style:none }
+caption, th { text-align:left }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal }
+q:before, q:after { content:''}
+
+/* Global reset-RESET */
+/* The below restores some sensible defaults */
+strong { font-weight:bold }
+em { font-style:italic }
+a img { border:none } /* Gets rid of IE's blue borders */
+/* HEader */
+
+// div.container{
+// 		height: 50px;
+// 		background: #999;
+
+// 	h1{
+// 		float: left;
+// 	}
+// }
+// div.menu, div.menu ul{
+// 		overflow: auto;
+
+// 	li{
+// 		float:left;
+// 	}
+// }
+
+/*Body*/
+body{
+	background: #000000;
+}
+div.post_container{
+		margin-top: 50px;
+
+	.post{
+		background: #F0F3F8;
+		border-bottom: 2px solid #DFE1E5;
+		height: 350px;
+		margin-bottom: 3.8%;
+		@media handheld, only screen and (max-width: 420px) {
+		height: 100%;
+		}
+	}
+}
+.post p{
+	margin-top: 3px;
+	margin-left: 15px;
+	font-size: .8em;
+}
+.album_title h2{
+	font-size: 1.3em;
+	margin-top: 5px;
+	margin-left: 15px;
+}
+
+div.post:nth-child(4n + 4){
+		margin-right: 0;
+	}
+div.post:last-child{
+		margin-right: 0px;
+	}
+
+@media only screen and (max-width: 900px) {
+	div.post:nth-child(4n + 4){
+		margin-right: 3.8%
+	}
+	div.post:nth-child(3n + 3){
+		margin-right: 0;
+	}
+}
+@media only screen and (max-width: 595px) {
+	div.post:nth-child(3n + 3){
+		margin-right: 3.8%;
+	}
+	div.post:nth-child(2n + 2){
+		margin-right: 0;
+	}
+}
+.container .dcjq-mega-menu {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    // left: -50%;
+    // position: relative;
+    text-align: left;
+}
+#dc_jqmegamenu_widget-3 {
+    list-style: none!important;
+}
