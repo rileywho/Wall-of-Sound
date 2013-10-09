@@ -99,7 +99,7 @@ div.post:last-child{
 	}
 }
 .container .dcjq-mega-menu {
-    float: right;
+    float: left;
     margin: 0px;
     padding: 0px;
     // left: -50%;
@@ -108,4 +108,8 @@ div.post:last-child{
 }
 #dc_jqmegamenu_widget-3 {
     list-style: none!important;
+}
+.searchbar{
+	height: 300px;
+	background: #fff;
 }

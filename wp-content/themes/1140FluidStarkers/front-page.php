@@ -13,7 +13,8 @@
  */
 
 get_header(); ?>
-
+<?php /* Template Name: front-page */ ?>
+<div class="searchbar twelvecol"></div>
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 					<?php if ( is_front_page() ) { ?>
@@ -27,5 +28,4 @@ get_header(); ?>
 						
 <?php endwhile; ?>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
